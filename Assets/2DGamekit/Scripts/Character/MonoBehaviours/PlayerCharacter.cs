@@ -310,6 +310,7 @@ namespace Gamekit2D
                 if (Time.time >= m_NextShotTime)
                 {
                     SpawnBullet();
+                    audioManager.PlayRanged();
                     m_NextShotTime = Time.time + m_ShotSpawnGap;
                 }
                 yield return null;
