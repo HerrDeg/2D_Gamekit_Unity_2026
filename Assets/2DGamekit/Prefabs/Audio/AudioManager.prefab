@@ -309,7 +309,6 @@ MonoBehaviour:
     music02: {fileID: 8933774022352548864}
     musicBoss: {fileID: 3257842776572977270}
     musicPause: {fileID: 4860983653683116548}
-    ambiance: {fileID: 0}
     snapShotPause: {fileID: 7484880938483047845}
   playerFootsteps:
     Guid:
@@ -334,18 +333,11 @@ MonoBehaviour:
     Path: 
   playerAttackMelee:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  playerAttackRanged:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 629424109
+      Data2: 1327464080
+      Data3: 529717416
+      Data4: 772699892
+    Path: event:/Pickup
   playerHurt:
     Guid:
       Data1: 0
