@@ -107,7 +107,7 @@ public class AudioManager : MonoBehaviour
             RuntimeManager.StudioSystem.setParameterByName(killedEnemiesParam, killedEnemies);
         }
 
-        Debug.Log(aggroEnemyCount);
+        //Debug.Log(aggroEnemyCount);
         
         //RuntimeManager.StudioSystem.setParameterByName(aggroEnemyParamName, aggroEnemyCount);
     }
@@ -225,7 +225,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Fmod event not found: playerAttackMelee");
             return;
         }
-        RuntimeManager.PlayOneShot(playerAttackMelee, transform.position);
+        RuntimeManager.PlayOneShot(playerAttackMelee);
     }
 
     public void PlayRanged()
@@ -245,7 +245,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Fmod event not found: playerHurt");
             return;
         }
-        RuntimeManager.PlayOneShot(playerHurt, transform.position);
+        RuntimeManager.PlayOneShot(playerHurt);
     }
 
     public void PlayDestroy(GameObject destroyObject)

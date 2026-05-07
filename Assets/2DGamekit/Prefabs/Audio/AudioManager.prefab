@@ -282,7 +282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 58702443641285382}
+  - {fileID: 5286807949332388171}
   - {fileID: 7188620585383569979}
   - {fileID: 7343739692746708910}
   - {fileID: 2799588366621092780}
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatTimerLength: 3
   eventEmitters:
-    ambiance: {fileID: 4676945218542962557}
+    ambiance: {fileID: 6102169153724229500}
     musicMenu: {fileID: 110158806593295546}
     music: {fileID: 5158617837186310920}
     music02: {fileID: 8933774022352548864}
@@ -321,25 +321,25 @@ MonoBehaviour:
     Path: event:/SFX/Player/player_footstep
   playerJump:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -982522406
+      Data2: 1312522307
+      Data3: -1448726093
+      Data4: -1063236252
+    Path: event:/SFX/Player/player_jump
   playerLand:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1238823705
+      Data2: 1144865685
+      Data3: -1310921078
+      Data4: -236279948
+    Path: event:/SFX/Player/player_land
   playerAttackMelee:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -532731740
+      Data2: 1281316329
+      Data3: 1924618406
+      Data4: -227662344
+    Path: event:/SFX/Player/player_weapon_melee
   playerAttackRanged:
     Guid:
       Data1: -649358731
@@ -349,11 +349,11 @@ MonoBehaviour:
     Path: event:/SFX/Player/player_weapon_ranged
   playerHurt:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 995878252
+      Data2: 1299230524
+      Data3: 165766808
+      Data4: 76132867
+    Path: event:/SFX/Player/player_hurt
   wallDestroy:
     Guid:
       Data1: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!1 &8336691390070343250
+--- !u!1 &6915156380868315077
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,8 +610,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 58702443641285382}
-  - component: {fileID: 4676945218542962557}
+  - component: {fileID: 5286807949332388171}
+  - component: {fileID: 6102169153724229500}
+  - component: {fileID: 7884864175553563830}
   m_Layer: 0
   m_Name: Ambiance
   m_TagString: Ambiance
@@ -619,13 +620,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &58702443641285382
+--- !u!4 &5286807949332388171
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8336691390070343250}
+  m_GameObject: {fileID: 6915156380868315077}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -634,13 +635,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4318290237554146966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4676945218542962557
+--- !u!114 &6102169153724229500
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8336691390070343250}
+  m_GameObject: {fileID: 6915156380868315077}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
@@ -649,11 +650,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -864739419
-      Data2: 1280154190
-      Data3: 2038971312
-      Data4: 363954020
-    Path: event:/AMB/amb_weather
+      Data1: -557996980
+      Data2: 1326074716
+      Data3: 1445645467
+      Data4: 896604677
+    Path: event:/AMB/amb_manager
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -665,3 +666,16 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &7884864175553563830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6915156380868315077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e964efe0e8cd4ddba522c37df205aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioEmitterPosition
+  tagName: Player
