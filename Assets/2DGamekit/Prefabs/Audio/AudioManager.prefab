@@ -356,18 +356,18 @@ MonoBehaviour:
     Path: event:/SFX/Player/player_hurt
   wallDestroy:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -424741324
+      Data2: 1292660849
+      Data3: 1542845362
+      Data4: -683515871
+    Path: event:/Objects/pillar_destroy
   pickupHealth:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1833805323
+      Data2: 1138949035
+      Data3: -752998213
+      Data4: -1596450191
+    Path: event:/SFX/Player/player_footstep
   doorSwitch:
     Guid:
       Data1: 0
@@ -384,11 +384,11 @@ MonoBehaviour:
     Path: 
   pickupKey:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1231769473
+      Data2: 1132157939
+      Data3: 704439976
+      Data4: 1388870508
+    Path: event:/Objects/key_pickup
   pressurePad:
     Guid:
       Data1: 0
