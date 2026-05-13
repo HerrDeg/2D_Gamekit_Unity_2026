@@ -142,7 +142,7 @@ MonoBehaviour:
       Data2: 1161316814
       Data3: 1124281532
       Data4: -1480429021
-    Path: event:/Objects/boss_door_switch
+    Path: event:/SFX/Objects/boss_door_switch
   StopType: 0
   Parameters: []
 --- !u!114 &11400000

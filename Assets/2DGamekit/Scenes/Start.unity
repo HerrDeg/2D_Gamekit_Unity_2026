@@ -29069,7 +29069,7 @@ PrefabInstance:
     - target: {fileID: 4318290237554146967, guid: 8b7499782bc734d9eb2dde86fcc6b7e9,
         type: 3}
       propertyPath: pickupKey.Path
-      value: event:/Objects/key_pickup
+      value: event:/SFX/Objects/key_pickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

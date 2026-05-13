@@ -210,6 +210,7 @@ namespace Gamekit2D
             m_Animator.SetFloat(m_HashVerticalSpeedPara, m_MoveVector.y);
             UpdateBulletSpawnPointPositions();
             UpdateCameraFollowTargetPosition();
+            //Debug.Log("Vertical speed: " + Mathf.Abs(m_MoveVector.y));
         }
 
         public void Unpause()

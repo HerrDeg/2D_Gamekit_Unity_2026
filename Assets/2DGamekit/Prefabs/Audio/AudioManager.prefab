@@ -360,7 +360,7 @@ MonoBehaviour:
       Data2: 1292660849
       Data3: 1542845362
       Data4: -683515871
-    Path: event:/Objects/pillar_destroy
+    Path: event:/SFX/Objects/pillar_destroy
   pickupHealth:
     Guid:
       Data1: -1833805323
@@ -388,7 +388,7 @@ MonoBehaviour:
       Data2: 1132157939
       Data3: 704439976
       Data4: 1388870508
-    Path: event:/Objects/key_pickup
+    Path: event:/SFX/Objects/key_pickup
   pressurePad:
     Guid:
       Data1: 0
@@ -398,11 +398,11 @@ MonoBehaviour:
     Path: 
   acidSplash:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 86504317
+      Data2: 1151585774
+      Data3: 1963559598
+      Data4: 1355170457
+    Path: event:/AMB/amb_acidpool_splash
   boxPush:
     Guid:
       Data1: 0
