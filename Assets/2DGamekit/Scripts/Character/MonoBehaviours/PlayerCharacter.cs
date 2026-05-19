@@ -454,8 +454,8 @@ namespace Gamekit2D
                     if (hit2D.collider != null)
                     {
                         //Call the land function and use the collider tag for surface comparison
-                        audioManager.PlayLand(hit2D.collider.tag);
-                        Debug.Log("Surface is " + hit2D.collider.tag);
+                        audioManager.PlayLand(hit2D.collider.tag, Mathf.Abs(m_MoveVector.y));
+                        Debug.Log("Surface is " + hit2D.collider.tag + Mathf.Abs(m_MoveVector.y));
                     }
                 }
             }

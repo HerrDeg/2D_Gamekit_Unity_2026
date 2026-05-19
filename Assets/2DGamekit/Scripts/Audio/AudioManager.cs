@@ -191,7 +191,7 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(playerJump);
     }
 
-    public void PlayLand(string surface)
+    public void PlayLand(string surface, float impact)
     {
         if (playerLand.IsNull)
         {
@@ -214,6 +214,7 @@ public class AudioManager : MonoBehaviour
                 playerFootstepInstance.setParameterByName("Surface", 0f);
                 break;
         }
+        playerLandInstance.setParameterByName("Impact", impact);
         playerLandInstance.start();
         playerLandInstance.release();
     }
