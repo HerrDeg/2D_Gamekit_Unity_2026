@@ -394,7 +394,7 @@ namespace Gamekit2D
             }
 
             m_Animator.SetTrigger(m_HashShootingPara);
-            audioManager.PlayEnemyRanged(gameObject);
+            //audioManager.PlayEnemyRanged(gameObject);
 
             m_FireTimer = 1.0f;
         }
@@ -413,8 +413,6 @@ namespace Gamekit2D
                 shootPosition.x *= -1;
 
             BulletObject obj = m_BulletPool.Pop(shootingOrigin.TransformPoint(shootPosition));
-            
-            
 
             obj.rigidbody2D.linearVelocity = (GetProjectilVelocity(m_TargetShootPosition, shootingOrigin.transform.position));
         }
