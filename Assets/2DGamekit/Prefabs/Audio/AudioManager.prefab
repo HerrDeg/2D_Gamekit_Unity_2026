@@ -360,35 +360,35 @@ MonoBehaviour:
       Data2: 1292660849
       Data3: 1542845362
       Data4: -683515871
-    Path: event:/SFX/Objects/pillar_destroy
+    Path: event:/SFX/Objects/obj_pillar_destroy
   pickupHealth:
     Guid:
-      Data1: -1833805323
-      Data2: 1138949035
-      Data3: -752998213
-      Data4: -1596450191
-    Path: event:/SFX/Player/player_footstep
+      Data1: 2092291227
+      Data2: 1172202324
+      Data3: -1485664628
+      Data4: -2048318350
+    Path: event:/SFX/Objects/obj_pickup_health
   doorSwitch:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2132908367
+      Data2: 1215763755
+      Data3: -1221956966
+      Data4: 401147315
+    Path: event:/SFX/Objects/obj_switch
   doorOpen:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1522938123
+      Data2: 1154616010
+      Data3: 750465183
+      Data4: -2029688227
+    Path: event:/SFX/Objects/obj_door_open
   pickupKey:
     Guid:
       Data1: -1231769473
       Data2: 1132157939
       Data3: 704439976
       Data4: 1388870508
-    Path: event:/SFX/Objects/key_pickup
+    Path: event:/SFX/Objects/obj_pickup_key
   pressurePad:
     Guid:
       Data1: 0
@@ -405,11 +405,11 @@ MonoBehaviour:
     Path: event:/AMB/amb_acidpool_splash
   boxPush:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 639679816
+      Data2: 1274576263
+      Data3: -1531014999
+      Data4: 1699855923
+    Path: event:/SFX/Objects/obj_box_move
   menuClick:
     Guid:
       Data1: 0
@@ -433,25 +433,25 @@ MonoBehaviour:
     Path: 
   enemyRanged:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 694312966
+      Data2: 1086700056
+      Data3: 1498459028
+      Data4: -261542502
+    Path: event:/SFX/Enemies/enmy_spitter_attack
   enemyMelee:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -678765728
+      Data2: 1297852194
+      Data3: -719349850
+      Data4: -1330234243
+    Path: event:/SFX/Enemies/enmy_chomper_attack
   enemyDeath:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 510761663
+      Data2: 1243187111
+      Data3: 454454166
+      Data4: -326768782
+    Path: event:/SFX/Enemies/enmy_death
   stingerGameOver:
     Guid:
       Data1: 715162006

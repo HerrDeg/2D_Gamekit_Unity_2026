@@ -399,6 +399,11 @@ namespace Gamekit2D
             m_FireTimer = 1.0f;
         }
 
+        public void ReadyShoot()
+        {
+            audioManager.PlayEnemyRanged(gameObject);
+        }
+        
         public void Shooting()
         {
             Vector2 shootPosition = shootingOrigin.transform.localPosition;
@@ -409,7 +414,7 @@ namespace Gamekit2D
 
             BulletObject obj = m_BulletPool.Pop(shootingOrigin.TransformPoint(shootPosition));
             
-            audioManager.PlayEnemyRanged(gameObject);
+            
 
             obj.rigidbody2D.linearVelocity = (GetProjectilVelocity(m_TargetShootPosition, shootingOrigin.transform.position));
         }
