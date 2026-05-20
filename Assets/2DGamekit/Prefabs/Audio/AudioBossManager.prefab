@@ -46,60 +46,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossWalk:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 674362743
+      Data2: 1132236324
+      Data3: 255970200
+      Data4: -866845730
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_walk
   bossLaserAttack:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 682524720
+      Data2: 1170811646
+      Data3: -854970472
+      Data4: -244724499
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_attack_laser
   bossGrenadeAttack:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 43870814
+      Data2: 1095657380
+      Data3: 622565296
+      Data4: 543012050
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_attack_grenade
   bossLightningAttack:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1053832698
+      Data2: 1150621760
+      Data3: -760100936
+      Data4: -1752779906
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_attack_lightning
   bossTakeDamage:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -562211765
+      Data2: 1318328055
+      Data3: -1449084230
+      Data4: 1965470141
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_damage
   bossShield:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1052049083
+      Data2: 1247362719
+      Data3: 783618455
+      Data4: 1922671247
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_shield
   bossSteamStage:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1240290230
+      Data2: 1157801791
+      Data3: 434293146
+      Data4: -230324076
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_steam
   bossDie:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1517750959
+      Data2: 1278847930
+      Data3: 626860705
+      Data4: 1281633739
+    Path: event:/SFX/Enemies/Boss Gunner/boss_gunner_death
   bossMusic: MusicBoss
   stageParameter: BossStage
   stage1Value: 0

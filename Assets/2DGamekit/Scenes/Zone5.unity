@@ -3546,6 +3546,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &439145553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1894949756581402, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_Name
+      value: Checkpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.7315826
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069235091111150, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 448ee8ad87a7f9f43b099285036e8bfc, type: 3}
 --- !u!1001 &462557176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52157,7 +52214,7 @@ PrefabInstance:
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
       propertyPath: audioSettings.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
@@ -52172,12 +52229,12 @@ PrefabInstance:
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
       propertyPath: audioSettings.Array.data[2].tag
-      value: Music
+      value: Ambiance
       objectReference: {fileID: 0}
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
       propertyPath: audioSettings.Array.data[3].tag
-      value: Music
+      value: Ambiance
       objectReference: {fileID: 0}
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
@@ -52197,12 +52254,12 @@ PrefabInstance:
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
       propertyPath: audioSettings.Array.data[2].action
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
       propertyPath: audioSettings.Array.data[3].action
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
@@ -52227,7 +52284,7 @@ PrefabInstance:
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
       propertyPath: audioSettings.Array.data[3].parameter
-      value: 
+      value: Location
       objectReference: {fileID: 0}
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
@@ -52257,7 +52314,7 @@ PrefabInstance:
     - target: {fileID: 8283495161900147264, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
       propertyPath: audioSettings.Array.data[3].targetValue
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8283495161900147265, guid: 5e02d266c3b0145ccad01d32166fc7b1,
         type: 3}
@@ -69562,16 +69619,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
-      propertyPath: bossDie.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossWalk.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
       propertyPath: stunParameter
       value: BossStun
       objectReference: {fileID: 0}
@@ -69579,196 +69626,6 @@ PrefabInstance:
         type: 3}
       propertyPath: bossDeathValue
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossShield.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossDie.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossDie.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossDie.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossDie.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossSteamStage.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossTakeDamage.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossWalk.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossWalk.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossWalk.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossWalk.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLaserAttack.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossShield.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossShield.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossShield.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossShield.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossGrenadeAttack.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLightningAttack.Path
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossSteamStage.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossSteamStage.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossSteamStage.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossSteamStage.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossTakeDamage.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossTakeDamage.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossTakeDamage.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossTakeDamage.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLaserAttack.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLaserAttack.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLaserAttack.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLaserAttack.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossGrenadeAttack.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossGrenadeAttack.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossGrenadeAttack.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossGrenadeAttack.Guid.Data4
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLightningAttack.Guid.Data1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLightningAttack.Guid.Data2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLightningAttack.Guid.Data3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4256432018734796894, guid: 056286e10563bf64cae51e44c59f8d93,
-        type: 3}
-      propertyPath: bossLightningAttack.Guid.Data4
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256432018734796895, guid: 056286e10563bf64cae51e44c59f8d93,
         type: 3}
@@ -69879,3 +69736,4 @@ SceneRoots:
   - {fileID: 493960761}
   - {fileID: 266430816}
   - {fileID: 975682041}
+  - {fileID: 439145553}
