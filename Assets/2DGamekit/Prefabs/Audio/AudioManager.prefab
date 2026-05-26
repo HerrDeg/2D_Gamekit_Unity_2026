@@ -412,25 +412,25 @@ MonoBehaviour:
     Path: event:/SFX/Objects/obj_box_move
   menuClick:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -806473866
+      Data2: 1225056615
+      Data3: -1395436616
+      Data4: -875123016
+    Path: event:/UI/ui_button_press
   menuStartGame:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -602478044
+      Data2: 1266475290
+      Data3: 354986678
+      Data4: -116694824
+    Path: event:/UI/ui_start_button_press
   enemyFootstep:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 314084394
+      Data2: 1144825973
+      Data3: -181100107
+      Data4: 1569274431
+    Path: event:/SFX/Enemies/enmy_generic_walk
   enemyRanged:
     Guid:
       Data1: 694312966
