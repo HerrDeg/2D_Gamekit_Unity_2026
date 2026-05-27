@@ -24,11 +24,14 @@ namespace Gamekit2D
         const float k_OffScreenError = 0.01f;
 
         protected float m_Timer;
+        
+        AudioManager audioManager;
 
         private void OnEnable()
         {
             m_SpriteRenderer = GetComponent<SpriteRenderer>();
             m_Timer = 0.0f;
+            audioManager = FindObjectOfType<AudioManager>();
         }
 
         public void ReturnToPool ()
@@ -76,6 +79,7 @@ namespace Gamekit2D
             TileBase surfaceHit = PhysicsHelper.FindTileForOverride(collider, transform.position, forward);
 
             VFXController.Instance.Trigger(VFX_HASH, transform.position, 0, m_SpriteRenderer.flipX, null, surfaceHit);
+            audioManager.PlayerProjectilePlay(gameObject, collider.tag);
         }
     }
 }

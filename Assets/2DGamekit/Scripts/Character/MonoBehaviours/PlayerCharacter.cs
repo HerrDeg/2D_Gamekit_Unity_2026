@@ -4,6 +4,8 @@ using System.Security.Principal;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using FMOD.Studio;
+using FMODUnity;
 
 namespace Gamekit2D
 {
@@ -114,6 +116,7 @@ namespace Gamekit2D
         protected ContactPoint2D[] m_ContactsBuffer = new ContactPoint2D[16];
 
         private AudioManager audioManager;
+        private EventInstance fallWindEventInstance;
 
         // MonoBehaviour Messages - called by Unity internally.
         void Awake()
@@ -157,6 +160,7 @@ namespace Gamekit2D
 
             m_StartingPosition = transform.position;
             m_StartingFacingLeft = GetFacing() < 0.0f;
+            fallWindEventInstance = audioManager.PlayFallWind(0f, fallWindEventInstance);
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -210,7 +214,10 @@ namespace Gamekit2D
             m_Animator.SetFloat(m_HashVerticalSpeedPara, m_MoveVector.y);
             UpdateBulletSpawnPointPositions();
             UpdateCameraFollowTargetPosition();
+
+            audioManager.PlayFallWind(Mathf.Abs(m_MoveVector.y), fallWindEventInstance);
             //Debug.Log("Vertical speed: " + Mathf.Abs(m_MoveVector.y));
+            //Debug.Log(Mathf.Abs(m_Animator.GetFloat("VerticalSpeed")));
         }
 
         public void Unpause()

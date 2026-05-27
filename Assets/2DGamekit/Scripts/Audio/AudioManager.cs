@@ -5,6 +5,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 public class AudioManager : MonoBehaviour
 {
@@ -33,10 +34,12 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private EventReference playerLand;
     [SerializeField] private EventReference playerAttackMelee;
     [SerializeField] private EventReference playerAttackRanged;
-    
+    [SerializeField] private EventReference playerFallWind;
     [SerializeField] private EventReference playerHurt;
+    [SerializeField] private EventReference playerProjectileExplosion;
     EventInstance playerFootstepInstance;
     EventInstance playerLandInstance;
+    EventInstance playerFallWindInstance;
 
     [Header("Objects & Interactables")]
     [SerializeField] private EventReference wallDestroy;
@@ -249,6 +252,57 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(playerHurt);
     }
 
+    public EventInstance PlayFallWind(float fallSpeed, EventInstance eventInstance)
+    {
+        if (playerFallWind.IsNull)
+        {
+            Debug.LogWarning("Fmod event not found: playerFallWind");
+        }
+
+        if (!eventInstance.isValid())
+        {
+            eventInstance = RuntimeManager.CreateInstance(playerFallWind);
+            eventInstance.start();
+        }
+
+        if (eventInstance.isValid())
+        {
+            eventInstance.setParameterByName("UserSpeed", fallSpeed);
+        }
+        return eventInstance;
+    }
+
+    public void PlayerProjectilePlay(GameObject obj, string surface)
+    {
+        if (playerProjectileExplosion.IsNull)
+        {
+            Debug.LogWarning("FMOD event not found: playerProjectileExplosion");
+        }
+
+        EventInstance eventInstance = RuntimeManager.CreateInstance(playerProjectileExplosion);
+        RuntimeManager.AttachInstanceToGameObject(eventInstance, obj);
+        switch (surface)
+        {
+            case "Grass":
+                eventInstance.setParameterByName("Surface", 0f);
+                break;
+            case "Rock":
+                eventInstance.setParameterByName("Surface", 1f);
+                break;
+            case "Metal":
+                eventInstance.setParameterByName("Surface", 2f);
+                break;
+            case "Energy":
+                eventInstance.setParameterByName("Surface", 3f);
+                break;
+            default:
+                eventInstance.setParameterByName("Surface", 0f);
+                break;
+        }
+        eventInstance.start();
+        eventInstance.release();
+    }
+
     public void PlayDestroy(GameObject destroyObject)
     {
         if (wallDestroy.IsNull)
@@ -339,14 +393,14 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(stingerGameOver);
     }
 
-    public void PlayPressurePad()
+    public void PlayPressurePad(GameObject obj)
     {
         if (pressurePad.IsNull)
         {
             Debug.LogWarning("Fmod event not found: pressurePad");
             return;
         }
-        RuntimeManager.PlayOneShot(pressurePad);
+        RuntimeManager.PlayOneShot(pressurePad, obj.transform.position);
     }
 
     public void PlayMenuGeneric()

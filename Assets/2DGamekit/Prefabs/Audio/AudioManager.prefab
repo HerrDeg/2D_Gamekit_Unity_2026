@@ -347,6 +347,13 @@ MonoBehaviour:
       Data3: 954999728
       Data4: 17959758
     Path: event:/SFX/Player/player_weapon_ranged
+  playerFallWind:
+    Guid:
+      Data1: -1234245976
+      Data2: 1217847879
+      Data3: -1200988776
+      Data4: 857384073
+    Path: event:/SFX/Player/player_fall_wind
   playerHurt:
     Guid:
       Data1: 995878252
@@ -354,6 +361,13 @@ MonoBehaviour:
       Data3: 165766808
       Data4: 76132867
     Path: event:/SFX/Player/player_hurt
+  playerProjectileExplosion:
+    Guid:
+      Data1: -886492316
+      Data2: 1248231939
+      Data3: -985732177
+      Data4: 2141762975
+    Path: event:/SFX/Player/player_projectile_explosion
   wallDestroy:
     Guid:
       Data1: -424741324
@@ -391,11 +405,11 @@ MonoBehaviour:
     Path: event:/SFX/Objects/obj_pickup_key
   pressurePad:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1975705886
+      Data2: 1214665303
+      Data3: 1412672385
+      Data4: -1020046355
+    Path: event:/SFX/Objects/obj_pressure_plate
   acidSplash:
     Guid:
       Data1: 86504317

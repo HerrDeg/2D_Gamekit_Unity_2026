@@ -7,6 +7,6 @@ public class AudioPressurePad : MonoBehaviour
     public void PlayPressureP()
     {
         AudioManager audioManager = FindObjectOfType<AudioManager>();
-        audioManager.PlayPressurePad();
+        audioManager.PlayPressurePad(gameObject);
     }
 }
