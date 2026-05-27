@@ -252,7 +252,7 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(playerHurt);
     }
 
-    public EventInstance PlayFallWind(float fallSpeed, EventInstance eventInstance)
+    public EventInstance PlayFallWind(EventInstance eventInstance, float fallSpeed = 0f)
     {
         if (playerFallWind.IsNull)
         {

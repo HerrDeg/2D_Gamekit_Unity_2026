@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using FMOD.Studio;
 using FMODUnity;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 namespace Gamekit2D
 {
@@ -160,7 +161,7 @@ namespace Gamekit2D
 
             m_StartingPosition = transform.position;
             m_StartingFacingLeft = GetFacing() < 0.0f;
-            fallWindEventInstance = audioManager.PlayFallWind(0f, fallWindEventInstance);
+            
         }
 
         void OnTriggerEnter2D(Collider2D other)
@@ -215,7 +216,16 @@ namespace Gamekit2D
             UpdateBulletSpawnPointPositions();
             UpdateCameraFollowTargetPosition();
 
-            audioManager.PlayFallWind(Mathf.Abs(m_MoveVector.y), fallWindEventInstance);
+            /*if (Mathf.Abs(m_MoveVector.y) >= 20f)
+            {
+                fallWindEventInstance = audioManager.PlayFallWind(fallWindEventInstance, Mathf.Abs(m_MoveVector.y));
+            }
+            else
+            {
+                fallWindEventInstance.stop(STOP_MODE.ALLOWFADEOUT);
+                fallWindEventInstance.release();
+            }
+            */
             //Debug.Log("Vertical speed: " + Mathf.Abs(m_MoveVector.y));
             //Debug.Log(Mathf.Abs(m_Animator.GetFloat("VerticalSpeed")));
         }
