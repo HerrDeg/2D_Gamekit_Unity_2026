@@ -15581,7 +15581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8c216d103379474eb95ad8002ef9d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vcaName: 
+  vcaName: SFX
 --- !u!114 &1355817757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27324,7 +27324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8c216d103379474eb95ad8002ef9d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vcaName: 
+  vcaName: MUSIC
 --- !u!114 &1707485453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28575,7 +28575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8c216d103379474eb95ad8002ef9d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vcaName: 
+  vcaName: MASTER
 --- !u!114 &2037411741
 MonoBehaviour:
   m_ObjectHideFlags: 0
